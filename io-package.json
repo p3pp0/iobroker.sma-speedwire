@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "sma-speedwire",
-        "version": "0.7.0",
+        "version": "0.8.0",
         "news": {
+            "0.8.0": {
+                "en": "tried to fix by p3pp0",
+                "de": "fix Versuche von p3pp0 "
+            },
             "0.7.0": {
                 "en": "Rework in a lot of areas, added role and unit settings for the values",
                 "de": "Überarbeitung in vielen Bereichen, bei den Werten werden nun auch die Werte für die Rolle und Unit gesetzt "
