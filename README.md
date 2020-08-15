@@ -20,6 +20,9 @@ This is a adapter for iobroker that can communicate with SMA inverters using the
 
 ## Changelog
 
+### 0.8.0
+* fix-versuche von p3pp0
+
 ### 0.7.0
 * Rework of state creation, now dynamic
 * Added values for role and unit to the states
