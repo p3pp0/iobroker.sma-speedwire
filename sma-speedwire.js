@@ -5,7 +5,7 @@
  *
  *  file io-package.json comments:
  *
- *  {
+ *  {s
  *      "common": {
  *          "name":         "sma-speedwire",                  // name has to be set and has to be equal to adapters folder name and main file name excluding extension
  *          "version":      "0.0.0",                    // use "Semantic Versioning"! see http://semver.org/
@@ -234,6 +234,7 @@ function main() {
 	sendCommand("InverterTemperature",client);
 	logout(client);
 	// Force terminate after 5min
+	adapter.log.debug("did send some commands and logged out");
 	waitCallBack();
 }
 
@@ -245,7 +246,7 @@ function waitCallBack()  {
 		process.exit(1);
 	}
 	waitCount++;
-	adapter.log.error("increase waitcount to  "+waitCount);
+	adapter.log.debug("increase waitcount to  "+waitCount+", callbackcount is "+callBackCount);
 	if (callBackCount > 0) {
 		adapter.log.debug("wait : "+callBackCount);
 		setTimeout(waitCallBack, 5000);
