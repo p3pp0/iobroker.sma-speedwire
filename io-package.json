@@ -3,6 +3,10 @@
         "name": "sma-speedwire",
         "version": "0.8.1",
         "news": {
+            "0.8.1": {
+                "en": "tried to fix by p3pp0",
+                "de": "fix Versuche von p3pp0 2"
+            },
             "0.8.0": {
                 "en": "tried to fix by p3pp0",
                 "de": "fix Versuche von p3pp0 "
