@@ -247,7 +247,7 @@ function waitCallBack()  {
 	waitCount++;
 	if (callBackCount > 0) {
 		adapter.log.debug("wait : "+callBackCount);
-		setTimeout(waitCallBack, 1000);
+		setTimeout(waitCallBack, 5000);
 		return;
 	}
 	process.exit(0);
