@@ -1,7 +1,7 @@
 {
-  "name": "iobroker.sma-speedwire-p3pp0",
+  "name": "iobroker.sma-speedwire",
   "version": "0.8.0",
-  "description": "ioBroker sma-speedwire Adapter",
+  "description": "ioBroker sma-speedwire Adapter edit p3pp0",
   "author": {
     "name": "@@Author@@",
     "email": "@@email@@"
