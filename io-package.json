@@ -1,8 +1,12 @@
 {
     "common": {
-        "name": "sma-speedwire",
-        "version": "0.7.0",
+        "name": "sma-speedwire-p3pp0edit",
+        "version": "0.8.0",
         "news": {
+            "0.8.0": {
+                "en": "tried to fix by p3pp0",
+                "de": "fix Versuche von p3pp0 "
+            },
             "0.7.0": {
                 "en": "Rework in a lot of areas, added role and unit settings for the values",
                 "de": "Überarbeitung in vielen Bereichen, bei den Werten werden nun auch die Werte für die Rolle und Unit gesetzt "
@@ -15,7 +19,7 @@
         "title": "IP based Communication für SMA Wechselrichter",
         "desc": {
               "en": "Adapter to query values from sma devices",
-              "de": "Adapter zum Abfragen von Werten von SMA Invertern",
+              "de": "Adapter zum Abfragen von Werten von SMA Invertern, test mit p3pp0s tripower10000",
               "ru": "Адаптер для запроса значений из sma-устройств",
               "pt": "Adaptador para consultar valores de dispositivos sma",
               "nl": "Adapter om waarden op te vragen van sma-apparaten",
@@ -36,7 +40,7 @@
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/AttackStrawbery/ioBroker.sma-speedwire/master/admin/sma.png",
         "keywords": ["sma-speedwire"],
-        "readme": "https://github.com/AttackStrawbery/ioBroker.sma-speedwire/blob/master/README.md",
+        "readme": "https://github.com/p3pp0/iobroker.sma-speedwire/blob/release/README.md",
         "loglevel": "info",
         "type": "general"
     },
