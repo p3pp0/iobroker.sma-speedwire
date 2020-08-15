@@ -250,6 +250,7 @@ function waitCallBack()  {
 		setTimeout(waitCallBack, 5000);
 		return;
 	}
+	adapter.log.debug("exit with callbackcount : "+callBackCount);
 	process.exit(0);
 }
 
