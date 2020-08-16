@@ -242,14 +242,15 @@ function main() {
 function waitCallBack()  {
 	//here is the trick, wait until var callbackCount is set number of callback functions
 	if (waitCount > maxWaitCount) {
-		adapter.log.error("Timeout "+waitCount+","+maxWaitCount);
-		process.exit(1);
+		#adapter.log.error("Timeout "+waitCount+","+maxWaitCount);
+		adapter.log.info("could not get values in time");
+		process.exit(0);
 	}
 	waitCount++;
 	adapter.log.debug("increase waitcount to  "+waitCount+", callbackcount is "+callBackCount);
 	if (callBackCount > 0) {
 		adapter.log.debug("wait : "+callBackCount);
-		setTimeout(waitCallBack, 50);
+		setTimeout(waitCallBack, 1000);
 		return;
 	}
 	adapter.log.debug("exit with callbackcount : "+callBackCount);
