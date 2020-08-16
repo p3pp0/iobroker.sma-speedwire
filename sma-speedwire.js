@@ -151,7 +151,7 @@ var mySusyId = "0078";
 var mySerial = "3803E8C8";
 var callBackCount = 0;
 var waitCount = 0;
-var maxWaitCount = 10;
+var maxWaitCount = 1;
 var dgram = require('dgram');
 var pktId = 480;
 var systemLanguage;
@@ -249,7 +249,7 @@ function waitCallBack()  {
 	adapter.log.debug("increase waitcount to  "+waitCount+", callbackcount is "+callBackCount);
 	if (callBackCount > 0) {
 		adapter.log.debug("wait : "+callBackCount);
-		setTimeout(waitCallBack, 5000);
+		setTimeout(waitCallBack, 50);
 		return;
 	}
 	adapter.log.debug("exit with callbackcount : "+callBackCount);
