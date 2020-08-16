@@ -151,7 +151,7 @@ var mySusyId = "0078";
 var mySerial = "3803E8C8";
 var callBackCount = 0;
 var waitCount = 0;
-var maxWaitCount = 1;
+var maxWaitCount = 2;
 var dgram = require('dgram');
 var pktId = 480;
 var systemLanguage;
@@ -242,17 +242,17 @@ function main() {
 function waitCallBack()  {
 	//here is the trick, wait until var callbackCount is set number of callback functions
 	if (waitCount > maxWaitCount) {
-		adapter.log.info("could not get values in time");
+		adapter.log.debug("could not get values in time");
 		process.exit(0);
 	}
 	waitCount++;
 	adapter.log.debug("increase waitcount to  "+waitCount+", callbackcount is "+callBackCount);
 	if (callBackCount > 0) {
 		adapter.log.debug("wait : "+callBackCount);
-		setTimeout(waitCallBack, 1500);
+		setTimeout(waitCallBack, 1000);
 		return;
 	}
-	adapter.log.info("regular exit");
+	adapter.log.debug("regular exit");
 	process.exit(0);
 }
 
