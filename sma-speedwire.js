@@ -249,10 +249,10 @@ function waitCallBack()  {
 	adapter.log.debug("increase waitcount to  "+waitCount+", callbackcount is "+callBackCount);
 	if (callBackCount > 0) {
 		adapter.log.debug("wait : "+callBackCount);
-		setTimeout(waitCallBack, 1000);
+		setTimeout(waitCallBack, 1500);
 		return;
 	}
-	adapter.log.debug("exit with callbackcount : "+callBackCount);
+	adapter.log.info("regular exit");
 	process.exit(0);
 }
 
